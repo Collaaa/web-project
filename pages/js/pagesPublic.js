@@ -65,11 +65,6 @@ const filloutItemContent = (item) => {
         <textarea placeholder="" class="text-content"></textarea>
       </li>
     `
-    const { isMandatory } = item
-    let textTitle = document.getElementById(`text-title${window.sessionStorage.getItem('itemKey')}`)
-    if (isMandatory === true) {
-      textTitle.innerText += '*'
-    }
   }
 }
 
