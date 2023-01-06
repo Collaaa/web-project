@@ -1,0 +1,133 @@
+.ques-list-wrapper {
+  margin-top: 12px;
+  height: 800px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.ques-list-items {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 68vw;
+  height: 85px;
+  box-shadow: 0 0 4px 0 #f0f0f0;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  margin-top: 15px;
+}
+
+.ques-list-items:first-of-type {
+  margin-top: 0;
+}
+
+.ques-list-items:hover {
+  box-shadow: 0 5px 15px rgba(211, 210, 210, 0.5);
+}
+
+.item-top {
+  padding: 13px 24px 0;
+  font-size: 16px;
+  height: 22px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.item-title:hover {
+  cursor: pointer;
+  color: #5d5e5e;
+}
+
+.item-link {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.haspublic,
+.nopublic,
+.hasend {
+  display: inline-block;
+  border-radius: 4px;
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  background: #0095ff;
+  *vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.nopublic {
+  background: #bfbfbf;
+}
+
+.hasend {
+  background-color: rgb(200, 21, 21);
+}
+
+.item-running {
+  color: #0095ff;
+  margin-right: 14px;
+  font-size: 12px;
+  cursor: auto;
+}
+
+.item-nopublic {
+  color: #7a7a7a;
+}
+
+.item-end {
+  color: rgb(200, 21, 21);
+}
+
+.item-date {
+  font-size: 12px;
+}
+
+.item-bot {
+  margin: 0 24px;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0 10px;
+  border-top: 1px solid #f5f5f5;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.item-edit,
+.item-delete,
+.item-data,
+.item-write,
+.item-resolve {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.item-icon {
+  font-size: 14px;
+  position: relative;
+  top: 1px;
+}
+
+/* 属性 */
+.ques-list-proper {
+  width: 100%;
+  height: 15px;
+  color: #7a7a7a;
+  font-size: 12px;
+  font-weight: 400;
+  /* margin-top: 10px; */
+}
+
+.delete-all {
+  cursor: pointer;
+  padding-right: 10px;
+  color: rgb(152, 162, 164);
+  font-size: 13px;
+}
+
+.count-all {
+  padding-left: 5px;
+}
+
+.delete-title {
+  text-decoration: line-through;
+}

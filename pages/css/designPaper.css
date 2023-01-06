@@ -1,0 +1,129 @@
+/* 问卷部分 */
+.ques-design-body-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 65vw;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 3px;
+  display: none;
+  margin-bottom: 40px;
+}
+
+.ques-design-body {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.ques-title-wrapper {
+  width: 600px;
+  /* height: 60px; */
+  text-align: center;
+  line-height: 60px;
+  /* margin-top: 20px; */
+}
+
+#ques-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#ques-title:hover {
+  cursor: pointer;
+}
+
+#rename-icon {
+  /* margin-left: 15px; */
+  display: none;
+  font-size: 18px;
+}
+
+.ques-title-wrapper:hover > #rename-icon {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+#rename-icon:hover {
+  cursor: pointer;
+}
+
+#title-edit {
+  margin-top: 17px;
+  display: none;
+}
+
+#title-edit-input {
+  padding: 0px 10px;
+  margin-bottom: 30px;
+  width: 380px;
+  height: 40px;
+  font-size: 18px;
+  border: 1.6px dashed rgb(166, 167, 168);
+  border-radius: 2px;
+}
+
+.edit-confirm-cancel {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-left: 15px;
+  background-color: rgb(203, 212, 214);
+  border-radius: 50%;
+  line-height: 44px;
+}
+
+.edit-confirm-cancel:hover {
+  cursor: pointer;
+}
+
+.iconfont-cf {
+  color: white;
+  margin-left: 14px;
+}
+
+#be-empty-two {
+  color: red;
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  top: 168px;
+  left: 475px;
+}
+
+.splice-line {
+  width: 94%;
+  height: 2px;
+  background-color: rgb(225, 226, 227);
+}
+
+.add-ques-wrapper {
+  width: 88%;
+  height: 150px;
+  line-height: 150px;
+  background-color: rgba(226, 231, 234, 0.783);
+  margin: 25px auto;
+  border-radius: 4px;
+  border: 3px dashed rgb(220, 222, 224);
+  color: rgb(86, 86, 86);
+  font-size: 18px;
+}
+
+.add-ques-wrapper:hover {
+  cursor: pointer;
+  background-color: rgb(220, 225, 228);
+  transition: all 0.3s;
+}
+
+.add-ques {
+  width: 120px;
+  margin: auto;
+  /* margin-left: 347.5px; */
+}
+
+#add-ques-icon {
+  margin-right: 11.67px;
+}

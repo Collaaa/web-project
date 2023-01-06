@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>填写问卷</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../icon/iconfont.css">
+  <link rel="stylesheet" href="./css/fillout.css">
+  <link rel="stylesheet" href="./css/designModal.css">
+
+  <script src="../js/public.js"></script>
+  <script src="./js/pagesPublic.js"></script>
+  <script type="text/javascript" src="./js/fillout.js"></script>
+
+</head>
+
+<body>
+  <nav class="ques-nav">
+    <div class="ques-nav-title point">
+      <i class="iconfont" id="icon-doubt">&#xe72d;</i> 问卷管理
+    </div>
+    <div class="ques-icon point">
+      <a href="/index.html" class="to-home">
+        <i class="iconfont">&#xf029d;</i> 我的问卷
+      </a>
+    </div>
+  </nav>
+
+  <div class="ques-fillout-body-wrapper">
+    <div class="ques-fillout-body">
+      <div class="ques-title-wrapper">
+        <span id="ques-title"></span>
+      </div>
+
+      <div class="fillout-ques-list">
+      </div>
+
+      <button class="submit-survey">提交问卷</button>
+    </div>
+  </div>
+
+  <!-- 模态框 -->
+  <div class="modal-wrapper">
+    <div class="modal-ques-type confirm-modal">
+      <div class="confirm-tips">提示</div>
+      <i class="iconfont close-icon">&#xe64f;</i>
+      <div class="delete-or-not">提交成功!</div>
+      <div class="btn-wrapper">
+        <button class="confirm-btn">好的</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

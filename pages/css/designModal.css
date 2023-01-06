@@ -1,0 +1,242 @@
+/* 模态框 */
+.modal-wrapper {
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 998;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-ques-type {
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
+  padding: 0;
+  border-radius: 5px;
+  width: 230px;
+  min-height: 290px;
+  background-color: rgba(255, 255, 255, 0.954);
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(193, 192, 192, 0.5);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.3s;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes animatetop {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes animatetop {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.close-icon {
+  float: right;
+  color: rgb(170, 170, 170);
+  padding-top: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.modal-title {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: rgb(69, 68, 68);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ques-type {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.type {
+  color: rgb(66, 62, 62);
+  width: 100px;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#type-single {
+  background-color: rgb(218, 199, 218);
+}
+
+#type-mutiply {
+  margin-top: 17px;
+  background-color: rgb(197, 197, 223);
+}
+
+#type-text {
+  margin-top: 17px;
+  background-color: rgb(209, 227, 209);
+}
+
+.add-more {
+  height: 25px;
+  line-height: 25px;
+  color: rgb(134, 134, 134);
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#add-more-font {
+  margin-bottom: 5px;
+}
+
+#add-more-checkbox {
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+}
+
+/* 修改题目的模态框 */
+#edit-modal {
+  width: 360px;
+  min-height: 150px;
+}
+
+.edit-input {
+  padding: 4px;
+  margin-top: 10px;
+  width: 215px;
+  height: 20px;
+  font-size: 14px;
+  border: 1.5px solid rgb(166, 167, 168);
+  border-radius: 2px;
+}
+
+.edit-list {
+  width: 100%;
+  padding-top: 50px;
+  margin-left: 35px;
+}
+
+.edit-item {
+  margin-top: 5px;
+}
+
+.edit-item-title {
+  color: rgb(87, 81, 81);
+  display: inline-block;
+  width: 55px;
+}
+
+.save-btn-wrapper {
+  color: rgb(134, 134, 134);
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+}
+
+.save-btn {
+  width: 60px;
+  height: 28px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(203, 212, 214);
+  cursor: pointer;
+}
+
+/* 确认是否删除的模态框 */
+/* #edit-modal-wrapper {
+  display: block;
+} */
+
+.confirm-modal {
+  margin-top: 250px;
+  width: 260px;
+  min-height: 150px;
+}
+
+.confirm-tips {
+  padding: 14px 60px 14px 20px !important;
+  display: inline-block;
+  color: #262626 !important;
+  font-size: 18px !important;
+  font-weight: 500;
+  text-align: left;
+}
+
+.delete-or-not {
+  padding: 10px 20px !important;
+  text-align: left;
+  font-size: 14px;
+  color: #595959;
+}
+
+.btn-wrapper {
+  text-align: right;
+  padding: 10px 8px 12px !important;
+}
+
+.btn-wrapper button {
+  height: 32px;
+  padding: 0 15px;
+  margin: 12px 5px 0 !important;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  color: #333;
+  border-radius: 2px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-wrapper .confirm-btn {
+  background-color: rgb(193, 198, 199) !important;
+  border-color: rgb(189, 198, 200) !important;
+  color: #fff;
+}
+
+#modal-content {
+  /* width: 80%;
+  margin: 0 auto; */
+  padding: 10px 20px !important;
+  text-align: left;
+  font-size: 14px;
+  color: #595959;
+}
+
+.ok-btn {
+  background-color: rgb(193, 198, 199) !important;
+  border-color: rgb(189, 198, 200) !important;
+  color: #fff;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>编辑问卷</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../icon/iconfont.css">
+  <link rel="stylesheet" href="./css/design.css">
+  <link rel="stylesheet" href="./css/designAddQues.css">
+  <link rel="stylesheet" href="./css/designModal.css">
+  <link rel="stylesheet" href="./css/designPaper.css">
+
+  <script src="../js/public.js"></script>
+  <script type="text/javascript" src="./js/designFunc1.js"></script>
+  <script type="text/javascript" src="./js/designFunc2.js"></script>
+  <script type="text/javascript" src="./js/design.js"></script>
+  <script type="text/javascript" src="./js/designAddQues.js"></script>
+  <script type="text/javascript" src="./js/designDate.js"></script>
+  <script type="text/javascript" src="./js/designContent.js"></script>
+</head>
+
+<body>
+  <nav class="ques-nav">
+    <div class="ques-nav-title point">
+      <i class="iconfont" id="icon-doubt">&#xe72d;</i> 问卷管理
+    </div>
+    <div class="ques-icon point">
+      <a href="/index.html" class="to-home">
+        <i class="iconfont">&#xf029d;</i> 我的问卷
+      </a>
+    </div>
+  </nav>
+
+  <!-- 输入问卷的标题 -->
+  <div class="ques-design-enter">
+    <!-- 问卷的标题 -->
+    <span class="ques-design-title">请输入问卷标题</span>
+    <input type="text" class="title-design-input" value="" placeholder="请输入标题" id="title">
+    <span id="be-empty-one">您输入的问卷名为空</span>
+    <div id="ques-create">
+      <span id="click-to-create">点击创建</span>
+    </div>
+  </div>
+
+  <div class="ques-design-body-wrapper">
+    <div class="ques-design-body">
+      <div class="ques-title-wrapper">
+        <span id="ques-title"></span>
+        <i class="iconfont" id="rename-icon">&#xf014f;</i>
+      </div>
+      <div id="title-edit">
+        <input type="text" id="title-edit-input">
+        <span id="be-empty-two">您输入的问卷名为空</span>
+        <div class="edit-confirm-cancel" id="confirm">
+          <i class="iconfont iconfont-cf">&#xe603;</i>
+        </div>
+        <div class="edit-confirm-cancel" id="cancel">
+          <i class="iconfont iconfont-cf">&#xe64f;</i>
+        </div>
+      </div>
+
+      <div id="question-list-add">
+      </div>
+
+      <div class="splice-line"></div>
+      <div class="add-ques-wrapper">
+        <div class="add-ques">
+          <i class="iconfont" id="add-ques-icon">&#xe64d;</i>
+          添加问题
+        </div>
+      </div>
+      <div class="splice-line"></div>
+      <div class="footer-wrapper">
+        <label for="start">问卷截止日期</label>
+        <input type="date" id="input-date" name="trip-start" min="2022-01-01" max="2030-12-31">
+        <div class="footer-btn-wrapper">
+          <button class="footer-btn" id="save-paper">保存问卷</button>
+          <button class="footer-btn" id="publish-paper">发布问卷</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 模态框 -->
+  <!-- 选择题型 -->
+  <div class="modal-wrapper">
+    <div class="modal-ques-type">
+      <i class="iconfont close-icon">&#xe64f;</i>
+      <div class="modal-title">选择题型</div>
+      <div class="ques-type">
+        <div class="type" id="type-single">
+          <i class="iconfont">&#xead9;</i>
+          <span>单选题</span>
+        </div>
+        <div class="type" id="type-mutiply">
+          <i class="iconfont">&#xead8;</i>
+          <span>多选题</span>
+        </div>
+        <div class="type" id="type-text">
+          <i class="iconfont">&#xeac5;</i>
+          <span>文本题</span>
+        </div>
+      </div>
+      <div class="add-more">
+        <input type="checkbox" id="add-more-checkbox">
+        <label for="add-more-checkbox" id="add-more-font">一次添加多道题目</label>
+      </div>
+    </div>
+  </div>
+  <!-- 编辑题目 -->
+  <div class="modal-wrapper">
+    <div class="modal-ques-type" id="edit-modal">
+      <i class="iconfont close-icon">&#xe64f;</i>
+      <div class="modal-title">编辑题目</div>
+      <div class="edit-list">
+      </div>
+      <div class="save-btn-wrapper">
+        <button class="save-btn">保存</button>
+      </div>
+    </div>
+  </div>
+  <!-- 删除题目 -->
+  <div class="modal-wrapper">
+    <div class="modal-ques-type confirm-modal">
+      <div class="confirm-tips">提示</div>
+      <i class="iconfont close-icon">&#xe64f;</i>
+      <div class="delete-or-not">是否确定删除？</div>
+      <div class="btn-wrapper">
+        <button class="cancel-btn">取消</button>
+        <button class="confirm-btn">确定</button>
+      </div>
+    </div>
+  </div>
+  <!-- 保存题目的时候提示修改截止日期 -->
+  <!-- 或提示题目少于1题 -->
+  <div class="modal-wrapper">
+    <div class="modal-ques-type confirm-modal">
+      <div class="confirm-tips">提示</div>
+      <i class="iconfont close-icon">&#xe64f;</i>
+      <div id="modal-content">
+      </div>
+      <div class="btn-wrapper">
+        <button class="ok-btn">好的</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 保存成功的界面 -->
+  <div class="ques-design-enter" id="after-save">
+  </div>
+
+</body>
+
+</html>

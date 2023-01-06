@@ -1,0 +1,156 @@
+/* body区域 */
+.ques-body {
+  display: flex;
+}
+
+/* body左边 */
+.ques-body-left {
+  width: 25%;
+  height: 85vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.ques-create {
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+  width: 260px;
+  height: 70px;
+  background-color: rgb(203, 212, 214);
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ques-create:hover {
+  cursor: pointer;
+  background-color: rgb(197, 205, 207);
+  transition: all 0.3s;
+}
+
+.ques-create h2 {
+  display: inline-block;
+}
+
+#add1 {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.sidebar-ul {
+  margin-top: 25px;
+}
+
+.sidebar-li {
+  padding: 0px 30px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid rgb(220, 222, 224);
+}
+
+.sidebar-li:hover {
+  cursor: pointer;
+  background-color: rgb(230, 232, 235);
+}
+
+.sidebar-icon {
+  font-size: 16px;
+  color: rgb(163, 160, 160);
+  margin-right: 7px;
+}
+
+.sidebar-li:first-child {
+  background-color: rgb(226, 231, 234);
+  font-weight: 700;
+}
+
+/* body右边 */
+.loading-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.ques-body-right {
+  width: 75%;
+  height: 79vh;
+  padding: 40px 60px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.ques-list-title {
+  width: 100%;
+  border-bottom: 1px solid rgb(220, 222, 224);
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+/* .ques-list-empty-wrapper {
+  display: none;
+} */
+
+.ques-list-empty {
+  margin-top: 110px;
+  width: 330px;
+  height: 165px;
+  border-radius: 4px;
+  border: 3px dashed rgb(220, 222, 224);
+  background-color: rgba(226, 231, 234, 0.783);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 45px;
+  color: rgb(86, 86, 86);
+}
+
+#ques-create-two {
+  font-size: 17px;
+  width: 130px;
+  height: 42px;
+  margin-top: 20px;
+}
+
+#add2 {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* loading效果 */
+.loading {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+
+  animation: circle infinite 0.75s linear;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

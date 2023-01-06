@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(240, 245, 247);
+}
+
+li {
+  list-style: none;
+}
+
+a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+}
+
+input {
+  outline: 0;
+}
+
+.to-home:-webkit-any-link {
+  color: black;
+}
+
+/* nav区域 */
+.ques-nav {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(203, 212, 214);
+  box-shadow: 0px 4px 10px 0px rgba(176, 174, 174, 0.3),
+    0px 1px 0px 0px rgb(232 232 232);
+  line-height: 65px;
+  position: sticky;
+  top: 0;
+  z-index: 199; /*important*/
+}
+
+.ques-nav-title {
+  display: inline-block;
+  font-size: 21px;
+  margin-left: 100px;
+}
+
+#icon-doubt {
+  font-size: 21px;
+}
+
+.ques-icon {
+  float: right;
+  margin-right: 200px;
+  font-size: 16px;
+}
+
+.point:hover {
+  cursor: pointer;
+}
+
+.to-home:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+/* 滚动条 */
+/*滚动条的宽度*/
+.ques-list-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*滚动条里面小方块*/
+.ques-list-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(203, 212, 214);
+}
+
+/*滚动条里面轨道*/
+.ques-list-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}

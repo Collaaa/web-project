@@ -1,0 +1,106 @@
+.ques-fillout-body-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 65vw;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.ques-fillout-body {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.ques-title-wrapper {
+  width: 600px;
+  text-align: center;
+  line-height: 60px;
+}
+
+#ques-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.fillout-ques-list {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.question-wrapper {
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.ques-li {
+  margin-top: 8px;
+}
+
+.text-content {
+  margin-top: 10px;
+  width: 60%;
+  height: 120px;
+  overflow: auto;
+  background: none;
+  resize: none;
+}
+
+/* 提交按钮和返回按钮的样式 */
+.back-btn,
+.submit-survey {
+  width: 100px;
+  height: 34px;
+  background-color: rgb(183, 191, 193);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-btn {
+  font-size: 16px;
+  width: 80px;
+}
+
+/* data的样式 */
+.data-title {
+  display: inline-block;
+  position: relative;
+  left: 450px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.view-item {
+  display: inline-block;
+  width: 270px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid rgb(181, 180, 180);
+  margin-top: 5px;
+}
+
+.proporion-square {
+  width: 180px;
+  height: 11px;
+  background-color: #0095ff;
+  position: relative;
+  left: -1px;
+}
+
+.proporion-num {
+  font-size: 12px;
+}
+
+.text-proportion {
+  margin-top: 10px;
+}
+
+.data-item {
+  margin-left: 28px;
+}
