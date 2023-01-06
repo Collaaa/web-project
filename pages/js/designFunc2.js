@@ -99,6 +99,10 @@ const handleCopy = (e) => {
         </div>
       `
       insertAfter(newDom, beforeDom)
+      let textDom = document.createElement('span')
+      textDom.innerText = ''
+      insertAfter(textDom, beforeDom)
+
       let OptionsDom = document.getElementsByClassName('ques-ul')[index + 1]
       for (let i = 0; i < optionNum; i++) {
         let word = String.fromCharCode((i + 1) + 64)    //A是1
@@ -134,6 +138,9 @@ const handleCopy = (e) => {
         </div>
       `
       insertAfter(newDom, beforeDom)
+      let textDom = document.createElement('span')
+      textDom.innerText = ''
+      insertAfter(textDom, beforeDom)
     }
 
     // 改变后面的题目序号
